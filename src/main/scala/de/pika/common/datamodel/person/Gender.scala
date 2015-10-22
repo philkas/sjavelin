@@ -6,8 +6,8 @@ package de.pika.common.datamodel.person
 object Gender {
   sealed abstract class Gender
 
-  sealed case object MALE extends Gender
-  sealed case object FEMALE extends Gender
+  case object MALE extends Gender
+  case object FEMALE extends Gender
 
   val values = Seq(MALE, FEMALE)
 }

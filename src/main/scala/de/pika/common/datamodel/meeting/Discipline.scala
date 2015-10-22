@@ -23,7 +23,7 @@ sealed case class VerticalJumpDiscipline(val name: String) extends Discipline
 sealed case class HorizontalJumpDiscipline(val name: String) extends Discipline
 
 object Discipline {
-  lazy val _50m = SprintDiscipline("50m", Meter(50.0))
-  lazy val _100m = SprintDiscipline("100m", Meter(100.0))
-  lazy val _200m = SprintDiscipline("200m", Meter(200.0))
+  lazy val _50m = SprintDiscipline("50m", new Meter(50.0))
+  lazy val _100m = SprintDiscipline("100m", new Meter(100.0))
+  lazy val _200m = SprintDiscipline("200m", new Meter(200.0))
 }
